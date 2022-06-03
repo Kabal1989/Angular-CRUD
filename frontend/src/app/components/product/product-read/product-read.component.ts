@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from './../product.model';
 import { ProductService } from './../product.service'
 
+
 @Component({
   selector: 'app-product-read',
   templateUrl: './product-read.component.html',
@@ -10,7 +11,7 @@ import { ProductService } from './../product.service'
 export class ProductReadComponent implements OnInit {
 
   products: Product[] = [];
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private productService: ProductService) { }
 
